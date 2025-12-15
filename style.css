@@ -11,6 +11,31 @@ div{
     justify-content: center;
 }
 
+#menu_buttons_container{
+    width: 1000px;
+    height: 300px;
+    margin: 200px 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "top-left top-right"
+        "bottom-left bottom-right";
+    gap: 50px;
+}
+
+#menu_buttons_container div{
+    height: fit-content;
+    transform: translate(-50%, -50%);
+}
+
+#copyright{
+    position: absolute;
+    color: rgba(128, 0, 0, 0.7);
+    font-size: 16px;
+    bottom: 2px;
+}
+
 p{
     color: rgb(0, 174, 174);
     font-size: 30px;
@@ -22,9 +47,9 @@ p{
 }
 
 h1{
-    margin-top: 10px;
+    margin-top: 15px;
     color: orange;
-    font-size: 4.7em;
+    font-size: 3.7em;
     margin-left: 60px;
 }
 .h1avg{
@@ -108,6 +133,7 @@ body.dark-theme p{
 }
                                      /*--------- Main navigation buttons style ---------*/
 
+/*
 #voorst{
     position:absolute;
     top: 32.5%;
@@ -139,6 +165,7 @@ body.dark-theme p{
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
+*/
 
                                          /*--------- <a> buttons style ---------*/
 
