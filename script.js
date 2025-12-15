@@ -41,10 +41,30 @@ if (cookieAccepted === 'true'){
     cookieMessage.style.display = 'block';
 }
 
+    // Greetings depends on current time
+
 acceptCookie.addEventListener('click', () => {
     cookieMessage.style.display = 'none';
     localStorage.setItem('cookieAccepted', 'true');
 });
+
+let greetings = document.getElementById("time_greetings");
+let date_time = new Date();
+let hours= date_time.getHours();
+
+function greetings_by_time(){
+    if(hours >= 6 && hours < 12){
+        greetings.innerText = "Goedemorgen!";
+    }else if(hours >= 12 && hours < 18){
+        greetings.innerText = "Goedemiddag!";
+    }else if(hours >= 18 && hours !== 0){
+        greetings.innerText = "Goedenavond!";
+    }else{
+        greetings.innerText = "Goedenacht!";
+    }
+}
+
+greetings_by_time()
 
 
 
