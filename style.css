@@ -1,8 +1,10 @@
 html {
     min-height: 100vh;
     min-width: 100vh;
-    cursor: url("cursor.png") 16 16, auto;
+    cursor: url("img/cursor.png") 16 16, auto;
 }
+
+
 
                                 /*--------- Page layout ---------*/
 
@@ -61,19 +63,20 @@ h1{
 }
 
 a, button, .botmpanel, .terugbut {
-    cursor: url("cursor-pointer.png") 16 16, pointer !important;
+    cursor: url("img/cursor-pointer.png") 16 16, pointer !important;
 }
 
 body {
     min-height: 90vh;
     min-width: 90vh;
     background-color: rgb(173, 254, 215);
-    background-image: url("Background.png");
+    background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     transition: 0.5s;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar { display: none; }
@@ -87,7 +90,7 @@ body {
 }
 body.dark-theme {
     background-color: rgb(27, 29, 42);
-    background-image: url("DTBackground.png");
+    background-image: url("img/DTBackground.png");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
